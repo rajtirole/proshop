@@ -1,0 +1,23 @@
+Redux
+we have two types of states 
+1. Global level state
+2. Component level state
+
+in redux we use global level state
+like in e-commerce site our products should be the global state because we want to use them in different components - to read,delete,update,and create some new products 
+
+the way through which state is changed is through reducer or reducer function and is responsible for manipulating and passing the states down in the components...reducer takes "actions" as arguements
+
+actions are just objects that represent the intention to change the state of piece of code
+we also have actionCreator which dispatch  or fire of those actions
+
+Terms used in redux
+REDUX - A complext state management tool, with a single store as CDS
+REDUCERS - Manages the state and returns newly updates state
+ACTIONS - Actions have 2 properties types: which is a unique identifier and payload which has data 
+DISPATCH - Dispatch is used to send actions to update the data
+
+
+ex
+actionCreator function - getProducts - in this we make a fetch request to get data using axios or fetch
+we get that data back and then we dispatch an action reducer and we attach a payload to it and that payload had the data... we can assign that payload to the state and can pass it down to any component   
