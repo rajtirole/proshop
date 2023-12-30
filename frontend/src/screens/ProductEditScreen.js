@@ -67,7 +67,7 @@ const ProductEditScreen = ({ location }) => {
         },
       }
 
-      const { data } = await axios.post('/api/uploads', formData, config)
+      const { data } = await axios.post('http://3.90.218.168:5000/api/uploads', formData, config)
       console.log(data)
       setImage(data)
       setUploading(false)
