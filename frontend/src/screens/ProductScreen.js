@@ -82,7 +82,7 @@ const ProductScreen = () => {
           <Row>
             {/* product image */}
             <Col md={6}>
-              <Image src={product.image} alt={product.name} fluid />
+              <Image src={`http://3.90.218.168:5000${product.image}`} alt={product.name} fluid />
             </Col>
             {/* product information */}
             <Col md={3}>
